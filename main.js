@@ -7,6 +7,21 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    // fullscreen: false,
+    x: 0,
+    y: 0,
+    // frame: true,
+    // title: 'Hello',
+    // titleBarStyle: 'hiddenInset',
+    // thickFrame: true,
+    // center: true, //x y voidavad argumendi
+    // movable: false,
+    // backgroundColor: 'black',
+    // transparent: true,
+    // kiosk: true,
+    // opacity: 0.5,
+    // skipTaskbar: true,
+    // autoHideMenuBar:true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
